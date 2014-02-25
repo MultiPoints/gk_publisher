@@ -1,0 +1,193 @@
+/*
+#------------------------------------------------------------------------
+# Publisher - November Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+ 
+/* Base for all menus */
+#gkMainMenu {
+	float: right;
+	margin: 12px 0 0 0;
+	padding: 0;
+	width: auto;
+}
+#gkMainMenu .gkMenu {
+	display: block;
+}
+.gkMenu > ul > li {
+	float: left;
+	width: auto;
+}
+.gkMenu > ul > li > a {
+	display: block;
+}
+.gkMenu > ul > li a small {
+	display: block;
+	font-size: 11px;
+	line-height: 13px;
+}
+.gkMenu > ul > li > .childcontent,
+.gkMenu > ul > li > .childcontent .childcontent {
+	position: absolute;
+	left: -999em;
+	z-index: 999;
+}
+.gkMenu > ul > li > .childcontent .gkcol {
+	float: left;
+}
+.gkMenu > ul > li:hover > .childcontent,
+.gkMenu > ul > li:hover > .childcontent li:hover > .childcontent {
+	left: inherit;
+}
+.gkMenu > ul > li:hover > .childcontent .childcontent {
+	margin-left: 140px;
+	margin-top: -25px !important;
+}
+
+/* main menu CSS */
+.gkMenu {
+	position: relative;
+	margin: 0;
+	z-index: 1000;
+}
+.gkMenu > ul {
+	height: 72px;
+	margin: 0;
+	padding: 0;
+}
+.gkMenu > ul > li {
+	height: 40px;
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin: 0 0 0 6px;
+}
+.gkMenu > ul > li > a {
+	background: #333;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	color: #fff;
+	display: block;
+	height: 40px;
+	line-height: 41px;
+	margin: 0;
+	padding: 0 22px;
+	text-transform: uppercase;
+}
+.gkMenu > ul > li:hover > a,
+.gkMenu > ul > li:active > a,
+.gkMenu > ul > li:focus > a,
+.gkMenu > ul > li.active:hover > a,
+.gkMenu > ul > li.active:active > a,
+.gkMenu > ul > li.active:focus > a,
+.gkMenu > ul > li.active > a {
+	background: #de7037;
+}
+.gkMenu > ul > li.haschild:hover > a {
+	-webkit-border-radius: 3px 3px 0 0;
+	   -moz-border-radius: 3px 3px 0 0;
+	        border-radius: 3px 3px 0 0;
+}
+.gkMenu > ul ul {
+	margin: 0;
+	padding: 0;
+}
+.gkMenu > ul div.childcontent {
+	margin-top: 0;
+}
+.gkMenu > ul div.childcontent-inner {
+	background: #de7037;
+	-webkit-border-radius: 0 3px 3px 3px;
+	   -moz-border-radius: 0 3px 3px 3px;
+	        border-radius: 0 3px 3px 3px;
+	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	   -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	    -ms-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	     -o-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	padding: 6px 0 0 0;
+	overflow: hidden;
+	text-align: left;	
+}
+
+.gkMenu > ul div.childcontent-inner div.childcontent-inner {
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	margin-top: 0!important;
+	padding: 0;
+}
+.gkMenu > ul div.childcontent-inner div.childcontent-inner div.childcontent-inner {
+	margin-top: 0!important;
+}
+.gkMenu > ul > li > .childcontent .gkcol {
+	padding-bottom: 0;
+}
+.gkMenu > ul div.childcontent li {
+	margin: 0;
+	padding: 0 18px;
+	border-top: 1px solid #ed8753;
+	
+}
+.gkMenu > ul div.childcontent li:hover {
+	 background: #ed8753;
+}
+
+.gkMenu > ul div.childcontent li:first-child { 
+	border: none;
+}
+
+.gkMenu > ul div.childcontent a {
+	color: #fff;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	min-height: 24px;
+	padding: 7px 0;
+}
+.gkMenu > ul div.childcontent small {
+	color: #ffd4bd;
+	font-size: 11px;
+	font-weight: 300;
+	margin: 0 0 6px;
+}
+.gkMenu > ul div.childcontent li.group {
+	padding: 0;
+	margin: 0;
+	height: auto;
+	border: none !important;
+	background: none;
+}
+.gkMenu > ul div.childcontent header {
+	padding: 10px 16px 6px 16px;
+	display: block;
+	color: #fff;
+	margin: 0;
+	font-weight: 400!important;
+}
+.gkMenu > ul div.childcontent header a {
+	border-bottom: 2px solid #ed8753;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0 -18px;
+	padding: 8px 18px 12px 18px;
+	text-transform: uppercase;
+}
+.gkMenu > ul div.childcontent header small {
+	display: block;
+	text-transform: none;
+}
+#gkMainMenu .module p {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+/* hide mobile menu */
+#gkMobileMenu {
+	display: none;
+}

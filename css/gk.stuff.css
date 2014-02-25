@@ -1,0 +1,637 @@
+/*
+#------------------------------------------------------------------------
+# Publisher - November Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+ 
+/*
+ * News Show Pro GK4
+ */
+.nsp { position: relative }
+.nspMain { overflow: hidden }
+.nspBotInterface,
+.nspTopInterface {
+    overflow: hidden;
+    clear: both;
+}
+.nspBotInterface div,
+.nspTopInterface div { float: right }
+.nsp .nspTopInterface div {
+    position: absolute;
+    right: 0;
+    padding: 0 3px;
+    top: 2px;
+}
+.nspPagination {
+    list-style-type: none !important;
+    margin: 5px 0 0 !important;
+    padding: 0 !important;
+    float: left;
+}
+.nspPagination li {
+    float: left;
+    width: 9px;
+    height: 9px;
+    margin: 0 4px 0 0 !important;
+    background: #e0e0e0;
+    border: none!important;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0!important;
+    text-indent: -999em;
+    cursor: pointer;
+}
+.nspPagination li:hover,
+.nspPagination li.active { 
+	background: #dc7037; 
+}
+.nspNext,
+.nspPrev {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 1px 0 0 4px;
+    background: url('../images/style1/nsp_interface.png') no-repeat -16px 0;
+    text-indent: -999em;
+    cursor: pointer;
+}
+.nspPrev { background-position: 0 0; }
+.nspNext:hover,
+.nspPrev:hover { background-position: -16px -16px }
+.nspPrev:hover { background-position: 0 -16px }
+.nspCounter {
+    float: left;
+    margin: 0 0 0 8px;
+    padding: 1px 4px;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #878787;
+    font-size: 9px;
+    cursor: pointer;
+}
+.nspArts { overflow: hidden }
+.nspArtPage { float: left }
+.nspArt {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+}
+.nspArt:first-child { border-top: none }
+.nspArt div { overflow: hidden }
+h4.nspHeader {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 10px;
+   
+}
+.nspArt h4.nspHeader a {
+    color: #363636;
+    text-decoration: none;
+}
+.nspArt h4.nspHeader a:active,
+.nspArt h4.nspHeader a:focus,
+.nspArt h4.nspHeader a:hover { color: #eb592a }
+.nspArt a {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.nspArt img.nspImage {
+	background: transparent url('../images/style1/img_bg.png') repeat 0 0;
+    border: none;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+    -webkit-transform: scale(1.0);
+       -moz-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+         -o-transform: scale(1.0);
+            transform: scale(1.0);
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+         -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 0.15s linear;
+       -moz-transition:    -moz-transform 0.15s linear;
+         -o-transition:      -o-transform 0.15s linear;
+            transition:         transform 0.15s linear;
+}
+.nspArt img.nspImage:hover {
+	-webkit-transform: scale(0.9);
+   	   -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+         -o-transform: scale(0.9);
+            transform: scale(0.9);
+}
+.nspArt .nspImageWrapper { overflow: hidden }
+.nspArt p.nspText {
+    color: #666;
+    float: none;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+}
+.nspArt p.nspText + .readon { margin-top: 32px }
+.nspArt p.nspText + .nspInfo { margin-top: 12px }
+.nspArt p.nspInfo {
+    color: #999;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.0;
+    margin: 0 0 5px 0;
+    
+}
+.nspArt p.nspInfo a {
+    color: #999;
+    padding-left: 8px;
+}
+.nspArt p.nspInfo a:active,
+.nspArt p.nspInfo a:focus,
+.nspArt p.nspInfo a:hover { color: #eb592a }
+.nspArt .tleft { text-align: left }
+.nspArt .tright { text-align: right }
+.nspArt .tcenter { text-align: center }
+.nspArt .tjustify { text-align: justify }
+.nspArt .fleft { float: left }
+.nspArt .fright { float: right }
+.nspArt .fnone {
+    clear: both;
+    width: 100%;
+    float: none;
+}
+.readon.left,
+.readon.right,
+.readon.center { clear: both }
+.readon.left { float: left }
+.readon.right { float: right }
+.readon.center {
+    display: inline;
+    float: none;
+}
+.nspList { float: left }
+.nspLinks ul {
+    padding: 0 !important;
+    list-style-type: none !important;
+}
+.nspLinks ul li {
+    background: transparent url('../images/style1/separator.png') repeat-x 0 top;
+    border-top: none;
+    margin: 0 !important;
+    padding: 16px 0 12px 0;
+}
+.nspLinks ul li h4 {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;
+}
+.nspLinks ul li h4 a { 
+	color: #333;
+	text-decoration: none; 
+}
+.nspLinks ul li h4 a:active,
+.nspLinks ul li h4 a:focus,
+.nspLinks ul li h4 a:hover {
+	color: #dc7037;
+}
+.nspLinks ul li p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 5px 0;
+}
+/* positioning */
+.nspArts.left { float: right }
+.nspLinksWrap.left { float: left }
+.nspArts.right { float: left }
+.nspLinksWrap.right { float: right }
+/* make element unvisible */
+.nspMain .unvisible {
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+/* font-size classes */
+.nspFs80 { font-size: 80% }
+.nspFs90 { font-size: 90% }
+.nspFs100 { font-size: 100% }
+.nspFs110 { font-size: 110% }
+.nspFs120 { font-size: 120% }
+.nspFs130 { font-size: 130% }
+.nspFs140 { font-size: 140% }
+.nspFs150 { font-size: 150% }
+.nspFs160 { font-size: 160% }
+.nspFs170 { font-size: 170% }
+.nspFs180 { font-size: 180% }
+.nspFs190 { font-size: 190% }
+.nspFs200 { font-size: 200% }
+/* New responsive layout */
+.gkResponsive { line-height: 1 }
+.gkResponsive img.nspImage,
+img.nspImage.gkResponsive {
+    width: 100% !important;
+    height: auto;
+}
+.gkResponsive a,
+a.gkResponsive {
+    display: block;
+    position: relative;
+}
+.gkResponsive { position: relative }
+.nspArt img.nspImage { max-width: 100% }
+.nspArtScroll1,
+.nspLinkScroll1 { width: 100% }
+.nspPages1 { width: 100% }
+.nspPages2 { width: 200% }
+.nspPages3 { width: 300% }
+.nspPages4 { width: 400% }
+.nspPages5 { width: 500% }
+.nspPages6 { width: 600% }
+.nspPages7 { width: 700% }
+.nspPages8 { width: 800% }
+.nspPages9 { width: 900% }
+.nspPages10 { width: 1000% }
+.nspCol1 { width: 100% }
+.nspCol2 { width: 50% }
+.nspCol3 { width: 33.33% }
+.nspCol4 { width: 25% }
+.nspCol5 { width: 20% }
+.nspCol6 { width: 16.66% }
+.nspCol7 { width: 14.285% }
+.nspCol8 { width: 12.5% }
+.nspCol9 { width: 11.1% }
+.nspCol10 { width: 10% }
+.nspCol11 { width: 9.09% }
+.nspCol12 { width: 8.33% }
+.nspCol13 { width: 7.69% }
+.nspCol14 { width: 7.14% }
+.nspCol15 { width: 6.66% }
+.nspCol16 { width: 6.25% }
+.nspCol17 { width: 5.88% }
+.nspCol18 { width: 5.55% }
+.nspCol19 { width: 5.26% }
+.nspCol20 { width: 5% }
+
+/* Suffix dark */
+.dark .nspArt img.nspImage,
+#gkBottom2 .nspArt img.nspImage {
+	background: transparent;
+    border: 1px solid #4f4f4f;
+    padding: 5px;
+}
+.dark .nspArt p.nspText,
+#gkBottom2 .nspArt p.nspText { 
+	color: #999; 
+}
+.dark .nspArt p.nspInfo,
+#gkBottom2 .nspArt p.nspInfo { 
+	color: #999; 
+}
+.dark .nspArt p.nspInfo a { color: #d5d5d5 }
+.dark .nspArt p.nspInfo a:active,
+.dark .nspArt p.nspInfo a:focus,
+.dark .nspArt p.nspInfo a:hover,
+#gkBottom2 .nspArt p.nspInfo a:active,
+#gkBottom2 .nspArt p.nspInfo a:focus,
+#gkBottom2 .nspArt p.nspInfo a:hover { 
+	color: #dc7037; 
+}
+.dark .nspLinks ul li h4 a,
+#gkBottom2 .nspLinks ul li h4 a { 
+	color: #d5d5d5; 
+}
+.dark .nspLinks ul li h4 a:active,
+.dark .nspLinks ul li h4 a:focus,
+.dark .nspLinks ul li h4 a:hover,
+#gkBottom2 .nspLinks ul li h4 a:active,
+#gkBottom2 .nspLinks ul li h4 a:focus,
+#gkBottom2 .nspLinks ul li h4 a:hover { 
+	color: #dc7037; 
+}
+.dark .nspLinks ul li, 
+#gkBottom2 .nspLinks ul li {
+    background: transparent;
+    border-top: 1px solid #4f4f4f;
+    margin: 0 !important;
+    padding: 12px 0;
+}
+#gkBottom2 .nspArt h4.nspHeader {
+	text-transform: none;
+}
+.dark .nspArt h4.nspHeader a,
+#gkBottom2 .nspArt h4.nspHeader a { 
+	color: #d5d5d5; 
+}
+.dark .nspArt h4.nspHeader a:active,
+.dark .nspArt h4.nspHeader a:focus,
+.dark .nspArt h4.nspHeader a:hover,
+#gkBottom2 .nspArt h4.nspHeader a:active,
+#gkBottom2 .nspArt h4.nspHeader a:focus,
+#gkBottom2 .nspArt h4.nspHeader a:hover { 
+	color: #dc7037; 
+}
+.dark .nspPagination li,
+#gkBottom2 .nspPagination li { 
+	background: #646464; 
+}
+.dark .nspPagination li:hover,
+.dark .nspPagination li.active,
+#gkBottom2 .nspPagination li:hover,
+#gkBottom2 .nspPagination li.active { 
+	background: #dc7037; 
+}
+.dark .nspNext,
+#gkBottom2 .nspNext { 
+	background-position: -16px -32px; 
+}
+.dark .nspPrev,
+#gkBottom2 .nspPrev { 
+	background-position: 0 -32px;
+}
+.dark .nspNext:hover,
+#gkBottom2 .nspNext:hover { 
+	background-position: -16px -16px; 
+}
+.dark .nspPrev:hover,
+#gkBottom2 .nspPrev:hover { 
+	background-position: 0 -16px; 
+}
+#gkSidebar .nspArt img.nspImage {
+	padding: 5px;
+}
+
+/* suffix big */
+.big .nspHeader {
+	font-size: 24px;
+	text-transform: uppercase
+}
+
+/* restrictions */
+#gkTop1 .nsp .nspTopInterface div, 
+#gkTop2 .nsp .nspTopInterface div, 
+#gkBottom1 .nsp .nspTopInterface div,
+#gkBottom2 .nsp .nspTopInterface div {
+	right: 20px;
+}
+
+#gkSidebar .nsp .nspTopInterface div {
+	right: 20px;
+	top: 22px;
+}
+
+#gkSidebar .nsp.transparent .nspTopInterface div {
+	right: 0;
+	top: 2px;
+}
+
+/*
+ * Image Show GK4 Module
+ */
+.gkIsWrapper-gk_publisher {
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.gkIsWrapper-gk_publisher .gkIsPreloader {
+	background: #dc7037 url('../images/style1/loader.gif') no-repeat center center;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 101;
+}
+
+.gkIsWrapper-gk_publisher figure {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.gkIsWrapper-gk_publisher figure.active {
+	opacity: 1;
+	position: relative;
+	z-index: 3;
+}
+
+.gkIsWrapper-gk_publisher img {
+	display: block;
+	height: auto;
+	position: relative;
+	width: 100%;
+}
+
+.gkIsWrapper-gk_publisher figcaption {
+	background: #dc7037;
+	bottom: -100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	left: 0;
+	padding: 25px 20px;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+	-webkit-transition: bottom 0.5s ease-out, top 0.5s ease-out, background 0.3s ease-out;
+	-moz-transition: bottom 0.5s ease-out, top 0.5s ease-out, background 0.3s ease-out;
+	-ms-transition: bottom 0.5s ease-out, top 0.5s ease-out, background 0.3s ease-out;
+	-o-transition: bottom 0.5s ease-out, top 0.5s ease-out, background 0.3s ease-out;
+	transition: bottom 0.5s ease-out, top 0.5s ease-out, background 0.3s ease-out;
+}
+
+.gkIsWrapper-gk_publisher figcaption:hover {
+	background: #333;
+}
+
+.gkIsWrapper-gk_publisher figcaption.top {
+	bottom: auto;
+	top: -100%;
+}
+
+.gkIsWrapper-gk_publisher figcaption.top.contains-pagination {
+	padding: 40px 20px 25px 20px;
+}
+
+.gkIsWrapper-gk_publisher figcaption.bottom.contains-pagination {
+	padding: 25px 20px 40px 20px;
+}
+
+.gkIsWrapper-gk_publisher figure.active figcaption {
+	bottom: 0%;
+	z-index: 4;
+}
+
+.gkIsWrapper-gk_publisher figure.active figcaption.top {
+	bottom: auto;
+	top: 0%;
+}
+
+.gkIsWrapper-gk_publisher figcaption h3 {
+	color: #fff;
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 40px;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.gkIsWrapper-gk_publisher figcaption p {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 0;
+	text-align: center;
+}
+
+.gkIsWrapper-gk_publisher figcaption a {
+	color: #fff;
+}
+
+.gkIsWrapper-gk_publisher ol {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	text-align: center;
+	top: 12px;
+	width: 100%;
+	z-index: 10;
+}
+
+.gkIsWrapper-gk_publisher ol.bottom {
+	top: auto;
+	bottom: 12px;
+}
+
+.gkIsWrapper-gk_publisher ol li {
+	background: #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	height: 13px;
+	text-indent: -999px;
+	width: 13px;
+}
+
+.gkIsWrapper-gk_publisher ol li:hover,
+.gkIsWrapper-gk_publisher ol li.active {
+	background: #f6bc9d;
+}
+
+/*
+ * Social GK5 Module
+ */
+ 
+div.gkTweet {
+    float: left;
+    display: inline-block;
+    color: #888;
+    font-size: 11px;
+}
+div.gkTweet > div {
+    border-top: 1px solid #444;
+    margin: 0;
+    padding: 30px 0 24px 0;
+}
+div.gkTweet:first-of-type > div {
+	border-top: none;
+	padding-top: 10px;
+}
+div.gkTweet > div > img {
+    height: 100%;
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 0 20px 20px 0;
+}
+span.gkTweetName {
+	padding-bottom: 10px;
+}
+span.gkTweetName a {
+    color: #1686cf;
+    font-weight: bold;
+    font-size: 14px;
+}
+span.gkTweetName small {
+    color: #a3a3a3;
+    font-size: 10px;
+    margin-left: 20px;
+}
+div.gkTweet > div a { color: #208bd0 }
+div.gkTweet > div a:hover { color: #135e8e }
+div.gkTweet > div p {
+    margin: 0;
+    line-height: 17px;
+    font-size: 12px;
+    word-wrap: break-word;
+}
+div.gkTweet > div > span.gkTweetInfo {
+    color: #dc7037;
+    display: block;
+    font-size: 10px;
+    padding-top: 14px;
+}
+div.gkTweet > div > span.gkTweetInfo a {
+    background: url('../images/twitterSprite.png') no-repeat 0 -1px transparent;
+    color: #999;
+    display: inline-block;
+    float: right;
+    height: 15px;
+    margin-right: 8px;
+    padding-left: 20px;
+}
+div.gkTweet > div > span.gkTweetInfo a:active,
+div.gkTweet > div > span.gkTweetInfo a:focus,
+div.gkTweet > div > span.gkTweetInfo a:hover {
+	color: #fff;
+}
+div.gkTweet > div > span.gkTweetInfo a:first-child { 
+	margin-left: 5px; 
+}
+div.gkTweet > div > span.gkTweetInfo a.reply { 
+	background-position: 0 -1px; 
+}
+div.gkTweet > div > span.gkTweetInfo a.reply:hover { 
+	background-position: 0 -18px; 
+}
+div.gkTweet > div > span.gkTweetInfo a.retweet { 
+	background-position: 0 -66px; 
+}
+div.gkTweet > div > span.gkTweetInfo a.retweet:hover { 
+	background-position: 0 -81px; 
+}
+div.gkTweet > div > span.gkTweetInfo a.favorite { 
+	background-position: 0 -34px; 
+}
+div.gkTweet > div > span.gkTweetInfo a.favorite:hover { 
+	background-position: 0 -50px; 
+}
+div.gkDivider { 
+	clear: both; 
+	width: 100%; 
+}

@@ -1,0 +1,651 @@
+/*
+#------------------------------------------------------------------------
+# Publisher - November Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+ 
+/* Style 4 */
+
+/* template.css */
+body {
+	background: #1a1a1a;
+}
+a,
+article div.tags a {
+	color: #c54807;
+}
+a:hover,
+a:active,
+a:focus,
+article div.tags a:hover,
+article div.tags a:focus,
+article div.tags a:active {
+	color: #111;
+}
+#gkPageWrap {
+	background: #a82500 url('../images/style4/snowflakes_bg.png') no-repeat center top!important;
+	background: url('../images/style4/snowflakes_bg.png') no-repeat center top, url('../images/style4/gradient_bg.png') no-repeat center -500px!important; 
+	background-color: #a82500!important;
+	background-size: auto auto, 2560px 2560px!important;
+	padding-bottom: 30px;
+}
+#gkPageTopBar {
+	background: #222;
+}
+#gkPageTopBar > div {
+	background: transparent;
+	margin-bottom: 0!important;
+	padding-bottom: 0;
+}
+#gkPageLogo {
+	margin-bottom: 44px!important;
+	margin-top: 20px!important;
+}
+.gkRSS,
+.gkTwitter,
+.gkFb,
+.gkGplus {
+	background-image: url('../images/style4/social_icons.png');	
+}
+#gkSocial {
+	margin-left: 0;
+}
+#gkUserArea {
+	margin-right: 0;
+}
+#gkTopBanner {
+	color: #777;
+	font-style: normal;
+}
+#gkLogin {
+	color: #777;
+}
+#gkLogin:active,
+#gkLogin:focus,
+#gkLogin:hover {
+	color: #c54807;
+}
+#gkRegister {
+	color: #c54807;
+}
+#gkRegister:active,
+#gkRegister:focus,
+#gkRegister:hover {
+	color: #777;
+}
+#gkLogin + #gkRegister::before {
+	border-left: 1px solid #525252;
+	border-right: 1px solid #2e2e2e;
+}
+#gkLogo {
+	width: 240px;
+}
+#gkLogo.cssLogo {
+	background: transparent url('../images/style4/logo.png') no-repeat 0 0;
+}
+#gkContentWrap {
+	position: relative;
+}
+#gkContentWrap::before {
+	content: url('../images/style4/decoration_left.png');
+	left: -60px;
+	position: absolute;
+	top: -40px;
+	z-index: 1;
+}
+#gkContentWrap::after {
+	content: url('../images/style4/decoration_right.png');
+	right: -45px;
+	position: absolute;
+	top: -45px;
+	z-index: 1;
+}
+#gkContent {
+	border: 1px solid #e9e8e7;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	    -ms-box-shadow: none;
+	     -o-box-shadow: none;
+	        box-shadow: none;
+	margin-top: 0!important;
+	padding-top: 30px!important;
+}
+#gkContent::before {
+	display: none;
+}
+#gkTop1,
+#gkTop2,
+#gkBottom1 {
+	background: #fff;
+	border: 1px solid #e9e8e7;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	    -ms-box-shadow: none;
+	     -o-box-shadow: none;
+	        box-shadow: none;
+	padding-top: 20px;
+}
+#gkBreadcrumb > div {
+	background: transparent;
+	border-bottom: 1px solid #ededed;
+}
+#gkBottom2 {
+	background: #222;
+	margin-bottom: 0!important;
+}
+#gkBottom2 .header {
+	color: #dfdfdf;
+}
+#gkBottom2 a {
+	color: #d5d5d5;
+}
+#gkBottom2 a:active,
+#gkBottom2 a:focus,
+#gkBottom2 a:hover {
+	color: #fff;
+}
+#gkBottom2 li {
+	border-top: 1px solid #444;
+}
+#gkBottom2 li:first-child {
+	border-top: none;
+} 
+#gkFooter {
+	border-top: none;
+	color: #565656;
+	padding-top: 10px;
+}
+#gkFooter a {
+	color: #989898;
+}
+#gkFooter a:active,
+#gkFooter a:focus,
+#gkFooter a:hover {
+	color: #fff;
+}
+#gkSidebar .box {
+	background: #fff;
+	border: 1px solid #e9e8e7;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	    -ms-box-shadow: none;
+	     -o-box-shadow: none;
+	        box-shadow: none;
+}
+#gkSidebar .box.dark {
+	background: #222!important;
+	border: 1px solid #3e3e3e;
+	color: #aaa;
+}
+#gkSidebar .box.dark ul li {
+	border-top: 1px solid #4e4e4e;
+}
+#gkSidebar .box.dark a {
+	color: #a4a4a4;
+}
+#gkSidebar .box.dark a:active,
+#gkSidebar .box.dark a:focus,
+#gkSidebar .box.dark a:hover {
+	color: #c54807;
+}
+.box.color .header {
+	color: #c54807;
+}
+#gkMainbodyTop + #gkMainbody,
+#gkContent > section + #gkMainbodyBottom {
+	background: transparent;
+	border-top: 1px solid #ededed;
+}
+#login-form ul {
+	background: transparent;
+	border-top: 1px solid #ededed;
+}
+.gkUsermenu {
+	background: transparent;
+	border-top: 1px solid #444;
+}
+.box.clear,
+.box.transparent {
+	border: none!important;
+}
+.box.transparent {
+	color: #fed6c1;
+}
+.box.transparent .header {
+	color: #fff;
+}
+.box.transparent a {
+	color: #fff;
+}
+.box.transparent a:active,
+.box.transparent a:focus,
+.box.transparent a:hover {
+	color: #e47c37;
+}
+.box.transparent li {
+	border-top-color: #e47c37;
+}
+
+/* joomla.css */
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="email"] {
+    border: 1px solid #d9d6d0;
+}
+button,
+.button,
+input.button,
+span.button,
+button.button,
+div.button,
+input[type="submit"],
+input[type="button"],
+.pagenav-prev a,
+.pagenav-next a,
+.readon,
+.pagination ul li a,
+.pagination ul li span {
+    background: #333;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+}
+button:hover,
+.button:hover,
+input.button:hover,
+span.button:hover,
+button.button:hover,
+div.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.pagenav-prev a:hover,
+.pagenav-next a:hover,
+.readon:hover,
+.pagination span.pagenav,
+.pagination ul li a:hover,
+.pagination ul li span:hover {
+    background: #c54807;
+}
+section.categories-list li > a,
+section.category .children li > a,
+section.blog .children li > a {    
+	color: #c54807; 
+}
+section.categories-list li > a:hover,
+section.category .children li > a:hover,
+section.blog .children li > a:hover {   
+	color: #363636; 
+}
+th {
+	background: transparent;
+	border-bottom: 1px solid #ededed;
+    color: #c54807;
+}
+th a {    
+	color: #c54807; 
+}
+th a:active,
+th a:focus,
+th a:hover {    
+	color: #111; 
+}
+section.blog article { 
+	background: transparent;
+	border-bottom: 1px solid #ededed;
+}
+article > time {
+	display: none;
+}
+article > time:first-line {
+	font-size: 40px;
+	line-height: 46px;
+}
+article > time + section header {
+	padding-left: 0;
+}
+article header h1 a:hover,
+article header h2 a:hover {
+	color: #c54807;
+}
+p.img_caption {
+    background: #f7683a;
+}
+section.login ul {
+	background: transparent;
+	border-top: 1px solid #ededed;
+}
+.profile legend,
+.profile-edit legend {
+	background: transparent;
+	border-bottom: 1px solid #ededed;
+}
+.contact-image {
+    background: transparent;
+    border: 1px solid #ededed;
+}
+.contact h3 {
+	background: transparent;
+	border-top: 1px solid #ededed;
+}
+section.newsfeed > ol > li {
+    background: transparent;
+    border-top: 1px solid #ededed;
+}
+.tip-title {
+    background: #c54807;
+}
+#system-message dd {
+    color: #fff;
+}
+#system-message dd.error {
+    color: #c54807;
+}
+#system-message dd.notice {
+    color: #ccc;
+}
+div.banneritem {
+    background: transparent;
+    border-top: 1px solid #ededed;
+}
+div.bannerfooter {
+    background: transparent;
+    border-top: 1px solid #ededed;
+    color: #c54807;
+}
+#gkSocialAPI {
+   	background: transparent;
+   	border-top: 1px solid #ededed;
+}
+.search-results dt {
+	background: transparent;
+	border-top: 1px solid #ededed;
+}
+.autocompleter-queried {    color: #c54807!important; }
+.img-intro-left,
+.img-intro-right,
+.img-intro-center,
+.img-intro-none,
+.img-fulltext-left,
+.img-fulltext-right,
+.img-fulltext-center,
+.img-fulltext-none {
+	background: transparent;
+	border: 1px solid #ededed;
+}
+article section > ul li { 
+	background: url("../images/style4/typography/bullet1.png") no-repeat 0 6px !important; 
+	padding: 2px 0 2px 28px;
+}
+
+/* gk_stuff.css */
+.nspPagination li {
+    background: #e0e0e0;
+}
+.nspPagination li:hover,
+.nspPagination li.active { 
+	background: #c54807; 
+}
+.nspNext,
+.nspPrev {
+    background-image: url('../images/style4/nsp_interface.png');
+}
+.nspArt h4.nspHeader a:active,
+.nspArt h4.nspHeader a:focus,
+.nspArt h4.nspHeader a:hover { color: #c54807 }
+.nspArt img.nspImage {
+	background: transparent;
+	border: 1px solid #ededed;
+}
+.nspArt p.nspText {
+    color: #666;
+}
+.nspArt p.nspInfo {
+    color: #999;
+}
+.nspArt p.nspInfo a {
+    color: #999;
+}
+.nspArt p.nspInfo a:active,
+.nspArt p.nspInfo a:focus,
+.nspArt p.nspInfo a:hover { color: #c54807 }
+.nspLinks ul li {
+    background: transparent;
+    border-top: 1px solid #ededed;
+}
+.nspLinks ul li h4 a:active,
+.nspLinks ul li h4 a:focus,
+.nspLinks ul li h4 a:hover {
+	color: #c54807;
+}
+.dark .nspArt img.nspImage,
+#gkBottom2 .nspArt img.nspImage {
+    border: 1px solid #4f4f4f;
+}
+.dark .nspArt p.nspText,
+#gkBottom2 .nspArt p.nspText { 
+	color: #999; 
+}
+.dark .nspArt p.nspInfo,
+#gkBottom2 .nspArt p.nspInfo { 
+	color: #999; 
+}
+.dark .nspArt p.nspInfo a { color: #d5d5d5 }
+.dark .nspArt p.nspInfo a:active,
+.dark .nspArt p.nspInfo a:focus,
+.dark .nspArt p.nspInfo a:hover,
+#gkBottom2 .nspArt p.nspInfo a:active,
+#gkBottom2 .nspArt p.nspInfo a:focus,
+#gkBottom2 .nspArt p.nspInfo a:hover { 
+	color: #c54807; 
+}
+.dark .nspLinks ul li h4 a,
+#gkBottom2 .nspLinks ul li h4 a { 
+	color: #c54807; 
+}
+.dark .nspLinks ul li h4 a:active,
+.dark .nspLinks ul li h4 a:focus,
+.dark .nspLinks ul li h4 a:hover,
+#gkBottom2 .nspLinks ul li h4 a:active,
+#gkBottom2 .nspLinks ul li h4 a:focus,
+#gkBottom2 .nspLinks ul li h4 a:hover { 
+	color: #d5d5d5;  
+}
+.dark .nspLinks ul li, 
+#gkBottom2 .nspLinks ul li {
+    border-top: 1px solid #4f4f4f;
+}
+.dark .nspArt h4.nspHeader a,
+#gkBottom2 .nspArt h4.nspHeader a { 
+	color: #c54807; 
+}
+.dark .nspArt h4.nspHeader a:active,
+.dark .nspArt h4.nspHeader a:focus,
+.dark .nspArt h4.nspHeader a:hover,
+#gkBottom2 .nspArt h4.nspHeader a:active,
+#gkBottom2 .nspArt h4.nspHeader a:focus,
+#gkBottom2 .nspArt h4.nspHeader a:hover { 
+	color: #d5d5d5; 
+}
+.dark .nspPagination li,
+#gkBottom2 .nspPagination li { 
+	background: #646464; 
+}
+.dark .nspPagination li:hover,
+.dark .nspPagination li.active,
+#gkBottom2 .nspPagination li:hover,
+#gkBottom2 .nspPagination li.active { 
+	background: #c54807; 
+}
+.gkIsWrapper-gk_publisher .gkIsPreloader {
+	background: #c54807 url('../images/style4/loader.gif') no-repeat center center;
+}
+.gkIsWrapper-gk_publisher figcaption {
+	background: #c54807;
+}
+.gkIsWrapper-gk_publisher figcaption:hover {
+	background: #222;
+}
+.gkIsWrapper-gk_publisher figcaption h3 a {
+	color: #fff;
+}
+.gkIsWrapper-gk_publisher figcaption p {
+	color: #fff;
+}
+.gkIsWrapper-gk_publisher figcaption a {
+	color: #fff;
+}
+.gkIsWrapper-gk_publisher figcaption a:active,
+.gkIsWrapper-gk_publisher figcaption a:focus,
+.gkIsWrapper-gk_publisher figcaption a:hover {
+	color: #fff;
+}
+.gkIsWrapper-gk_publisher ol li {
+	background:#fcd5c0;
+}
+.gkIsWrapper-gk_publisher ol li:hover,
+.gkIsWrapper-gk_publisher ol li.active {
+	background: #fff;
+} 
+div.gkTweet {
+    color: #888;
+}
+div.gkTweet > div {
+    border-top: 1px solid #444;
+}
+span.gkTweetName small {
+    color: #a3a3a3;
+}
+div.gkTweet > div > span.gkTweetInfo {
+    color: #c54807;
+}
+div.gkTweet > div > span.gkTweetInfo a {
+    background: url('../images/twitterSprite.png') no-repeat 0 -1px transparent;
+    color: #999;
+}
+div.gkTweet > div > span.gkTweetInfo a:active,
+div.gkTweet > div > span.gkTweetInfo a:focus,
+div.gkTweet > div > span.gkTweetInfo a:hover {
+	color: #fff;
+}
+
+/* menu.css */
+.gkMenu {
+	margin-top: 15px;
+}
+.gkMenu > ul {
+	height: 60px;
+}
+.gkMenu > ul > li > a {
+	background: transparent;
+	color: #ffd9c6;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 0 10px;
+	text-transform: none;
+}
+.gkMenu > ul > li:hover > a,
+.gkMenu > ul > li:active > a,
+.gkMenu > ul > li:focus > a,
+.gkMenu > ul > li.active:hover > a,
+.gkMenu > ul > li.active:active > a,
+.gkMenu > ul > li.active:focus > a,
+.gkMenu > ul > li.active > a {
+	background: transparent;
+	color: #fff;
+}
+.gkMenu > ul > li > div.childcontent::before {
+	background: transparent url('../images/style4/submenu_bg.png') no-repeat left top;
+	content: "";
+	display: block;
+	height: 7px;
+	position: relative;
+	width: 32px;
+}
+.gkMenu > ul div.childcontent-inner {
+	background: #7b9a36;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	    -ms-box-shadow: none;
+	     -o-box-shadow: none;
+	        box-shadow: none;
+}
+.gkMenu > ul div.childcontent-inner div.childcontent-inner {
+	border: 1px solid #8dae42;
+}
+.gkMenu > ul div.childcontent li {
+	border-top: 1px solid #8dae42;	
+}
+.gkMenu > ul div.childcontent li:hover {
+	 background: #8dae42;
+}
+.gkMenu > ul div.childcontent small {
+	color: #e0eac9;
+}
+.gkMenu > ul div.childcontent header a {
+	border-bottom: 2px solid #8dae42;
+}
+
+/* k2.css */
+
+h1 > sup,
+h2 > sup {
+    color: #c54807;
+}
+.itemImage {
+	background: transparent;
+	border: 1px solid #ededed;
+}
+.itemImageCaption {
+  	background: #222;
+}
+.itemAuthorBlock .itemAuthorDetails {
+	background: #f8f8f8;
+}
+h3.titleComments {
+    background: transparent;
+    border-top: 1px solid #ededed;
+}
+#itemListLinks li {
+    background: url('../images/style4/typography/bullet-square2.png') no-repeat 0 6px;
+}
+.itemsContainerWrap .itemList figure:hover { 
+	border-color: #c54807;
+}
+.k2CalendarBlock table.calendar tr td.calendarTodayLinked {
+    background: #c54807;
+}
+.k2TagCloudBlock a,
+div.tags a {
+    background: #e47c37;
+}
+.k2TagCloudBlock a:hover {
+    background: #333;
+    color: #fff!important;
+}
+div.tags a:hover {
+	color: #fff;
+	 background: #333;
+}
+/* popup */
+#gkPopupLogin #login-form input[type="text"],
+#gkPopupLogin #login-form input[type="password"] {
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+		    border-radius: 0;
+}
+#gkPopupLogin #form-login-buttons input.button { 
+    background: #c54807;
+}
+#gkPopupLogin #form-login-buttons input.button:hover { 
+    background: #555;
+}

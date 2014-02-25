@@ -1,0 +1,103 @@
+/*
+#------------------------------------------------------------------------
+# Publisher - November Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+.nspArt img:hover {
+	filter: alpha(opacity=85);	
+}
+
+body #gkPage img {
+	width: auto!important;
+}
+
+.box.hot:before,
+.box.top:before,
+.box.new:before {
+	zoom: 1!important;
+}
+
+.display-limit {
+	white-space: pre;
+	word-break: keep-all;
+}
+
+.display-limit select {
+	display: inline!important;
+}
+
+.print-icon img,
+.email-icon img,
+.edit-icon img {
+	display: block;
+	margin-left: 10px;
+	margin-top: -10px;
+}
+
+/* Fix for the IE8 floated image problem */
+.nspImage {
+    width: auto!important;
+}
+
+/* Fix for crashing IE8 */
+li.itemRatingBlock {
+	display: none!important;
+}
+
+/* Fix for the print/email icons */
+li.print-icon,
+li.email-icon {
+	margin-top: 10px!important;
+}
+
+li.print-icon:after,
+li.email-icon:after {
+	display: none!important;
+}
+
+.k2LatestCommentsBlock .k2Avatar {
+	height: 30px!important;
+	width: 30px!important;
+}
+table,
+table tr,
+table td,
+table tbody,
+table thead {
+     vertical-align: top!important;
+}
+
+.ieclear {
+	clear: both;
+	display: block;
+	width: 100%;
+}
+
+#gkPageTopBar,
+#gkPageTopBar .gkPage {
+	overflow: hidden;
+	clear: both;
+}
+
+#gkPageWrap {
+	padding: 0 0 30px 0;
+}
+
+#gkContent {
+	margin-top: 0!important;
+	padding-top: 20px!important;
+}
+
+.itemImage img {
+	height: auto!important;
+	width: 100%!important;
+}
+
+.gkPage#gkBottom1 {
+	border: #000 3px solid;
+}

@@ -1,0 +1,789 @@
+.k2FeedIcon a,
+a.k2FeedIcon {
+    background: url(../images/k2/rss.png) no-repeat 0 0;
+    color: #999;
+    display: block;
+    float: left;
+    font-size: 12px;
+    height: 21px;
+    line-height: 21px;
+    padding: 0 0 0 32px;
+}
+.k2FeedIcon a:hover,
+a:hover.k2FeedIcon { color: #222 }
+.k2FeedIcon a { float: none }
+h1 > sup,
+h2 > sup {
+    color: #de7037;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 2px 6px;
+    top: -1.8em;
+}
+ul li.itemResizer a {
+    background: url(../images/k2/fonts.png) no-repeat 100% -1px;
+    display: inline-block;
+    height: 15px;
+    text-indent: -9999em;
+    width: 15px;
+}
+#k2Container {
+	position: relative;
+	margin-bottom: 0!important;
+}
+.itemInfo {
+    color: #363636;
+    font-size: 13px;
+}
+.itemInfo > ul > li {
+    border-bottom: 1px solid #eee;
+    padding: 6px 0;
+}
+ul li.itemResizer span { padding: 0 6px 0 0 }
+ul li.itemResizer #fontIncrease { background-position: 0 -1px }
+.smallerFontSize { font-size: 90%!important }
+.largerFontSize { font-size: 115%!important }
+.itemImageBlock {
+    margin: 0 0 32px;
+    position: relative;
+}
+.itemPrintLink, .itemEmailLink {  
+    display: inline-block;
+	text-indent: -99999em; 	
+}
+.itemPrintLink { 	
+    background: url('../images/system/printButton.png') no-repeat 0 7px;
+	width: 15px;
+}
+.itemEmailLink {
+	background: url('../images/system/emailButton.png') no-repeat 0 7px;
+	width: 18px;
+}
+.itemImage {
+	background: transparent url('../images/style1/img_bg.png') repeat 0 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    line-height: 0;
+    padding: 12px;
+    overflow: hidden;
+}
+.itemImageBlock img {
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0;
+}
+.itemImageCaption {
+  	background: #de7037;
+    bottom: 24px;
+    color: #fff;
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 6px;
+    position: absolute;
+    right: 24px;
+    text-align: right;
+}
+.itemImageBlock > a {
+    display: block;
+    width: 100%;
+}
+.itemExtraFields ul li span.itemExtraFieldsValue,
+.itemLinks .itemCategory a,
+.itemLinks .itemAttachmentsBlock ul,
+.itemLinks .itemTagsBlock ul {
+    display: block;
+    margin: 0 0 0 17%;
+}
+.itemBottom {
+    clear: both;
+    margin: 0 0 6px;
+}
+.itemInfoBlock {
+	border-top: 1px solid #e5e5e5;
+	clear: both;
+	margin: 24px 0 0 0;
+}
+.itemLinks {
+    clear: both;
+    margin: 0 0 38px;
+    padding: 6px 0;
+}
+.itemLinks .itemTagsBlock,
+.itemLinks .itemSocialSharing {
+    clear: both;
+    overflow: hidden;
+}
+.itemLinks .itemTagsBlock {
+	line-height: 25px;
+}
+.itemSocialSharing {
+    margin: 0 0 32px;
+    padding: 18px 0 0;
+}
+.itemSocialSharing > div { 
+	display: block; 
+	float: left;
+	margin-right: 10px;
+}
+.itemExtraFields {
+    font-size: 12px;
+    padding: 24px 0 12px 0;
+}
+.itemExtraFields h3 {
+    font-size: 18px;
+    padding: 0 0 8px;
+}
+small.itemDateModified {
+    display: block;
+    font-style: italic;
+    text-align: right;
+}
+.itemRatingForm {
+    display: block;
+    line-height: 25px;
+    vertical-align: middle;
+}
+.itemRatingLog {
+    float: left;
+    line-height: 25px;
+    margin: -2px 0 0;
+    padding: 0 0 0 4px;
+}
+span#formLog {
+    background: #eb592a;
+    clear: both;
+    color: #FFF;
+    display: block;
+    float: none;
+    margin: 10px 0;
+    position: relative;
+    text-align: center;
+    top: 10px;
+}
+.itemRatingForm .formLogLoading {
+    height: 25px;
+    padding: 0 0 0 20px;
+}
+.itemRatingList,
+.itemRatingList a:hover,
+.itemRatingList .itemCurrentRating { background: url(../images/k2/star.png) left -1000px repeat-x }
+.itemRatingList {
+    background-position: left top;
+    float: left;
+    height: 25px;
+    list-style: none;
+    margin: 0 6px!important;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 125px;
+}
+.itemRatingList li {
+    background: none;
+    border: none!important;
+    display: inline;
+    padding: 0;
+}
+.itemRatingList a,
+.itemRatingList .itemCurrentRating {
+    border: none;
+    cursor: pointer;
+    height: 25px;
+    left: 0;
+    line-height: 25px;
+    outline: none;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -1000px;
+    top: 0;
+}
+.itemRatingList a:hover { background-position: left center }
+.itemRatingList a.one-star {
+    width: 20%;
+    z-index: 6;
+}
+.itemRatingList a.two-stars {
+    width: 40%;
+    z-index: 5;
+}
+.itemRatingList a.three-stars {
+    width: 60%;
+    z-index: 4;
+}
+.itemRatingList a.four-stars {
+    width: 80%;
+    z-index: 3;
+}
+.itemRatingList a.five-stars {
+    width: 100%;
+    z-index: 2;
+}
+.itemRatingList .itemCurrentRating {
+    background-position: 0 bottom;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+.itemTags li a {
+    margin: 0 12px 2px 0;
+    text-decoration: underline;
+}
+.itemExtraFields ul li {
+    border-top: 1px solid #eee;
+    list-style: none;
+    padding: 5px 0;
+}
+.itemLinks ul li { list-style: none }
+.itemLinks .itemAttachmentsBlock ul li a span { 
+	color: #676767; 
+}
+.userView .itemAuthorBlock {
+    float: none;
+    margin: 0 0 36px;
+    width: auto;
+}
+.itemAuthorBlock { 
+	margin: 32px 0 24px; 
+}
+.itemAuthorBlock > .gkAvatar {
+    float: right;
+    margin:24px 0 0 20px;
+    padding: 2px 0;
+}
+.gkAvatar img,
+.k2Avatar img {
+   
+	margin-right: 22px;
+}
+.itemAuthorBlock .itemAuthorDetails {
+	background: #faf8f5;
+    font-size: 14px;
+	padding: 22px 168px 20px 39px;
+}
+.itemAuthorBlock .itemAuthorDetails p { 
+    font-style: italic;
+	margin: .5em 0;
+}
+.itemAuthorData h3 {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 2px 0 8px;
+    text-transform: uppercase;
+}
+.itemAuthorContent {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0 0 20px 0;
+	width: 100%;
+}
+.itemAuthorContent2Col {
+	float: left;
+	padding: 0 15px 0 0;
+	width: 50%;
+}
+.itemAuthorContent ul li {
+	border-top: 1px solid #eee;
+	padding: 4px 0;
+}
+.itemAuthorContent ul li:first-child {
+	border-top: none;
+}
+.itemAuthorContent2Col + .itemAuthorContent2Col {
+	padding: 0 0 0 15px;
+}
+.itemAuthorContent2Col + .itemAuthorContent2Col + * {
+	clear: both;
+}
+
+.itemAuthorContent a { 
+    color: #777; 
+	font-size: 13px;
+}
+.itemNavigation {
+    clear: both;
+    color: #7D7B7A;
+    font-size: 12px;
+    padding: 0;
+}
+
+.itemNavigation span {
+	color: #333;
+	display: block;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.itemPrevious {
+	float: left;
+}
+
+.itemNext {
+	float: right;
+}
+
+.itemCommentsForm label {
+    clear: both;
+    display: block;
+    padding: 12px 0 0;
+}
+.itemCommentsForm textarea.inputbox { height: 200px }
+.itemCommentsForm .inputbox { width: 560px }
+.itemCommentsForm #submitCommentButton {
+    clear: both;
+    margin: 20px 0 0;
+}
+.itemCommentsForm .itemCommentsFormNotes {
+    border-top: 1px solid #eee;
+    font-size: 12px;
+    margin: 0 0 24px;
+    padding-top: 7px;
+}
+.itemBody + h3 { margin-top: 72px }
+h3.titleComments {
+    background: transparent url('../images/style1/separator.png') repeat-x left top;
+    clear: both;
+    font-weight: 600;
+    line-height: 36px;
+    padding: 18px 0;
+    text-transform: uppercase;
+}
+.itemComments .itemCommentsList li {
+    border-top: 1px solid #eee;
+    margin-bottom: 24px;
+    padding: 12px 0 0;
+    position: relative;
+}
+.itemComments .itemCommentsList li img {
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+         -o-border-radius: 3px;
+            border-radius: 3px;
+    display: block;
+    margin-left: -80px;
+    position: absolute;
+    top: 22px;
+}
+.itemComments .itemCommentsList li {
+	padding-left: 80px;
+}
+.itemCommentsList li h3 {
+    float: left;
+    font-size: 16px;
+    font-weight: 400;
+}
+.itemCommentsList li h3 + a,
+.itemCommentsList li h3 + a + span,
+.itemCommentsList li h3 + span {
+    float: right;
+    font-size: 12px;
+    margin: 0 0 0 10px;
+}
+.itemCommentsList li h3 + a + span, .itemCommentsList li h3 + span { color: #999}
+.commentLink:hover { color: #363636 }
+.itemList article header h2 { margin: 0 0 16px }
+.itemTags { padding-left: 4px!important }
+.userView article,
+.genericView article,
+.itemList article,
+article.itemView {
+    clear: both;
+    margin-bottom: 66px!important;
+}
+.subCategoryContainer {
+    float: left;
+    margin-bottom: 32px;
+}
+.subCategoryContainer .subCategory { margin: 0 32px 24px 0 }
+#itemListLinks ul { margin: 12px 0 0 }
+#itemListLinks li {
+    background: url(../images/style1/typography/bullet-square2.png) no-repeat 0 6px;
+    font-size: 13px;
+    padding-left: 24px;
+}
+#itemListLinks a { color: #737373 }
+.itemsContainerWrap .itemView {
+    color: #999;
+    font-size: 13px;
+    padding: 12px;
+    
+}
+.itemsContainerWrap figcaption h2 {
+    font-size: 14px;
+    
+    line-height: 20px;
+    margin: 20px 0 2px;
+	text-transform: uppercase
+}
+.itemsContainerWrap figcaption time {
+    border: none;
+    color: #999;
+    font-size: inherit;
+}
+.itemsContainerWrap .itemList article { 
+	margin-bottom: 0;
+}
+.itemsContainerWrap .itemList figure {
+   
+    padding: 0 0 16px;
+}
+.itemsContainerWrap .itemList figure:hover { 
+	border-color: #de7037;
+}
+.itemsContainerWrap .itemList figure img {
+    -moz-transition: opacity .2s linear;
+    -o-transition: opacity .2s linear;
+    -webkit-transition: opacity .2s linear;
+    opacity: 0.8;
+    transition: opacity .2s linear;
+}
+.itemsContainerWrap .itemList figure img:hover { 
+	opacity: 1; 
+}
+.itemsContainerWrap article {
+	margin-bottom: 20px!important;
+}
+.k2LatestCommentsBlock .k2FeedIcon { margin: 16px 0 12px 0}
+.k2LatestCommentsBlock { font-size: 14px }
+.k2LatestCommentsBlock .k2Avatar { margin: 6px 0 0 }
+.k2LatestCommentsBlock div { margin: 0 0 12px 60px }
+.k2LatestCommentsBlock div p {
+    
+    font-style: italic;
+    line-height: 1.6;
+    margin: .3em 0;
+}
+.k2LatestCommentsBlock div p a { color: #777}
+.k2LatestCommentsBlock div p a:hover { color: #333}
+.k2LatestCommentsBlock div span {
+     font-size: 12px;
+    font-style: italic;
+  
+    line-height: 1;
+  
+}
+.k2Avatar {
+    display: block!important;
+    float: left;
+    margin: 0 24px 0 0;
+}
+.tcUsername {
+    color: #333;
+    font-size: 18px;
+}
+.tcLatestComment {
+    color: #737373;
+    display: block;
+    font-size: 13px;
+    margin: 6px 0;
+}
+.tcLatestCommentDate {
+    color: #999;
+    display: block;
+    font-size: 11px;
+}
+div .k2ItemsBlock ul { margin-right: -20px }
+div .k2ItemsBlock ul li {
+    background: none!important;
+    list-style: none!important;
+    margin: 0 0 12px;
+    padding: 12px 20px 12px 0 !important;
+}
+a.moduleItemTitle {
+    color: #212121;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.moduleItemAuthor {
+    border-bottom: 1px solid #eee;
+    font-size: 11px;
+    margin: 0 0 16px;
+    overflow: hidden;
+}
+.moduleItemAuthor a {
+    color: #212121;
+    display: block;
+    font: bold 12px Verdana, Geneva, sans-serif;
+    padding: 0 0 12px;
+}
+.moduleItemIntrotext {
+    display: block;
+    line-height: 1.6;
+    padding: 12px 0 0;
+}
+.moduleItemIntrotext a.moduleItemImage img {
+    float: left;
+    margin: 4px 0;
+    overflow: hidden;
+}
+.moduleItemDateCreated,
+.moduleItemCategory {
+    color: #999;
+    font: normal 10px Verdana, Geneva, sans-serif;
+}
+.moduleItemExtraFields ul li span.moduleItemExtraFieldsLabel {
+    display: block;
+    float: left;
+    font-weight: 700;
+    margin: 0 4px 0 0;
+    width: 30%;
+}
+.moduleItemTags,
+.moduleAttachments {
+    border-top: 1px solid #eee;
+    margin: 12px 0 0;
+    overflow: hidden;
+    padding: 12px 0 0;
+}
+.moduleItemTags strong {
+    color: #212121;
+    font-size: 12px;
+}
+a.moduleItemComments { font-size: 12px }
+a:hover.moduleItemComments {
+    background-position: 0 100%;
+    color: #fff;
+}
+.k2ItemsBlock ul li span.moduleItemHits { font-size: 90% }
+.moduleItemImage {
+    display: block;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+.moduleItemReadMore {
+    clear: both;
+    display: block;
+}
+.k2LoginBlock fieldset.input {
+    margin: 0;
+    padding: 0 0 8px;
+}
+.k2LoginBlock fieldset.input p {
+    margin: 0;
+    padding: 0 0 4px;
+}
+.k2LoginBlock fieldset.input p#form-login-remember label,
+.k2LoginBlock fieldset.input p#form-login-remember input { display: inline }
+.k2UserBlock p.ubGreeting { border-bottom: 1px dotted #eee }
+.k2UserBlock .k2UserBlockDetails span.ubName {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+}
+.k2BreadcrumbsBlock span.bcTitle {
+    color: #999;
+    padding: 0 4px 0 0;
+}
+.k2BreadcrumbsBlock span.bcSeparator {
+    font-size: 14px;
+    padding: 0 4px;
+}
+.k2CalendarBlock { margin-bottom: 8px }
+.k2CalendarLoader { background: #fff }
+.k2CalendarBlock table.calendar {
+    background: #fff;
+    border-collapse: collapse;
+    border-left: 1px solid #eee;
+    margin: 0 auto;
+    width: 100%;
+}
+.k2CalendarBlock table.calendar tr td {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 3px;
+    text-align: center;
+    vertical-align: middle;
+}
+.k2CalendarBlock table.calendar tr td.calendarNavMonthPrev,
+.k2CalendarBlock table.calendar tr td.calendarNavMonthNext {
+    background: #fff;
+    font-size: 15px!important;
+    text-align: center;
+}
+.k2CalendarBlock table.calendar tr td.calendarDayName {
+    background: #f5f5f5;
+    color: #333;
+    font-size: 11px;
+    font-weight: 600;
+    width: 14.2%;
+}
+.k2CalendarBlock table.calendar tr td.calendarDateEmpty { background: #fbfbfb }
+.k2CalendarBlock table.calendar tr td.calendarDate { font-size: 11px }
+.k2CalendarBlock table.calendar tr td.calendarDateLinked a {
+    display: block;
+    padding: 2px;
+}
+.k2CalendarBlock table.calendar tr td.calendarDateLinked a:hover {
+    background: #212121;
+    color: #fff!important;
+    display: block;
+    padding: 2px;
+}
+.k2CalendarBlock table.calendar tr td.calendarToday {
+    background: #212121;
+    color: #fff;
+}
+.k2CalendarBlock table.calendar tr td.calendarTodayLinked {
+    background: #dc7037;
+    color: #fff;
+    padding: 0;
+}
+table.calendar tr td.calendarTodayLinked a {
+    color: #fff!important;
+    display: block;
+    padding: 2px;
+}
+.k2CalendarBlock table.calendar tr td.calendarTodayLinked a:hover {
+    background: #252525;
+    color: #fff;
+    display: block;
+    padding: 2px;
+}
+.gkColumns > aside .k2CalendarBlock table.calendar,
+.gkColumns > aside .k2CalendarBlock table.calendar tr td {
+    background: none;
+    border: none;
+    color: #fff;
+}
+.gkColumns > aside .k2CalendarBlock table.calendar tr td.calendarDateLinked a {
+    font-size: 18px;
+    font-weight: 700;
+}
+.gkColumns > aside .calendarNavMonthPrev,
+.gkColumns > aside .calendarCurrentMonth,
+.gkColumns > aside .calendarNavMonthNext { background: #212121!important }
+.k2CategorySelectBlock form select { width: auto }
+.k2TagCloudBlock a {
+    background: #de7037;
+	color: #fff;
+    float: left;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 3px;
+    padding: 2px 9px;
+}
+.k2TagCloudBlock a:hover {
+    background: #333;
+    color: #fff;
+}
+#k2Container .gsc-control { width: 100% }
+span.ubUserEmail {
+    display: inline-block;
+    height: 16px;
+    margin: 0 2px 0 0;
+    overflow: hidden;
+    padding: 0;
+    width: 16px;
+}
+span.ubUserEmail a {
+    display: inline-block;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+    text-indent: -9999px;
+    width: 16px;
+}
+.k2UsersBlock ul li h3 {
+    clear: both;
+    margin: 8px 0 0;
+    padding: 0;
+}
+.catCounter {
+    font-size: 11px;
+    font-weight: 400;
+}
+article header .itemRatingBlock > div { margin: 3px 0 0 }
+.itemCommentsPagination ul li {
+    display: inline-block;
+    font-size: 80%;
+    margin: 0 3px;
+}
+.calendarNavMonthPrev,
+.calendarNavMonthNext { font-family: sans-serif!important }
+.k2CategoriesListBlock ul li,
+.k2ArchivesBlock ul li {
+    padding: 6px 0;
+}
+.itemBottom .itemRatingBlock span,
+.itemBottom .itemRatingBlock .itemRatingList,
+.itemBottom .itemRatingBlock .itemRatingForm ul.itemRatingList li,
+.itemLinks .itemCategory span,
+.itemLinks .itemAttachmentsBlock > span,
+.itemExtraFields ul li span.itemExtraFieldsLabel,
+.itemLinks .itemTagsBlock span,
+.itemLinks .itemTagsBlock ul li,
+.latestView .itemsContainer,
+.itemRatingBlock span,
+.itemLinks .itemSocialSharing > div,
+.itemCommentsForm textarea,
+.itemCommentsForm .inputbox,
+.itemList ul.itemTags li,
+.itemContainer { float: left }
+.itemRatingBlock,
+.itemListSubCategories { overflow: hidden }
+.itemAuthorUrl,
+.itemAuthorEmail,
+.k2LoginBlock fieldset.input p label,
+.k2LoginBlock fieldset.input p input { display: block }
+.itemCommentsList li p,
+.itemList ul.itemTags {
+    clear: both;
+    padding: 12px 0 0;
+}
+.itemBackToTop,
+.moduleItemTags a { float: right }
+
+.clr,
+#itemListLinks,
+.moduleItemAuthor p { clear: both }
+#itemListLinks a:hover,
+.itemsContainerWrap figcaption h2 a { color: #212121 }
+.k2CalendarBlock table.calendar tr td.calendarDateLinked,
+.itemContainerLast:first-child .itemImageBlock,
+.clr + .itemContainerLast .itemImageBlock { padding: 0 }
+#k2Container .gsc-branding-text,
+.itemCommentsPagination ul { text-align: right }
+#k2Container .gs-visibleUrl,
+a.ubUserFeedIcon span,
+a.ubUserFeedIcon:hover span,
+a.ubUserURL span,
+a.ubUserURL:hover span,
+article header .itemRatingBlock > span { display: none }
+a.ubUserFeedIcon,
+a.ubUserFeedIcon:hover,
+a.ubUserURL,
+a.ubUserURL:hover {
+    display: inline-block;
+    height: 16px;
+    margin: 0 2px 0 0;
+    padding: 0;
+    width: 16px;
+}
+.itemIntroText ol,
+.itemFullText ol {
+	list-style:decimal;
+	list-style-position:inside;
+}
+.itemAuthorContent { 
+	clear: both; 
+}

@@ -1,0 +1,291 @@
+/*
+#------------------------------------------------------------------------
+# Publisher - November Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+/* Basic elements */
+html {
+	height: 100%;
+}
+body,
+html {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}
+body {
+	background:  #FFFBF4 url('../../images/style1/bg_pattern.png') repeat 0 0;
+	font-family: 'Exo',Arial,sans-serif;
+	min-height: 100%;
+	font-size: 16px;
+	line-height: 2;
+	color: #777;
+	padding: 0;
+	font-weight: 300;
+	word-wrap: break-word;
+}
+a {
+	color: #363636;
+	-webkit-transition: background 0.3s cubic-bezier(.17,.67,.88,1.25), color 0.2s linear;
+	   -moz-transition: background 0.3s cubic-bezier(.17,.67,.88,1.25), color 0.2s linear;
+	     -o-transition: background 0.3s cubic-bezier(.17,.67,.88,1.25), color 0.2s linear;
+	        transition: background 0.3s cubic-bezier(.17,.67,.88,1.25), color 0.2s linear;
+	text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+	color: #eb592a;
+}
+
+/* containers */
+#gkPage {
+	min-width: 280px;
+	max-width: 100%;
+	padding: 15px 0 0 0;
+	margin: 0 auto;
+}
+#gkPageWrap {
+	background: transparent;
+	padding: 0 0 30px 0;
+	width: 100%;
+}
+#frame {
+	clear: both;
+	margin: 0;
+	overflow: hidden;
+	padding: 42px 15px;
+}
+
+/* Logo  */
+#gkLogo {
+	margin: 20px auto;
+	padding: 0;
+	text-indent: -999em;
+	text-shadow: none;
+	width: 240px;
+	display: block;
+}
+#gkLogo img {
+	display: block;
+	margin: 0;
+}
+#gkLogo.cssLogo {
+	background: transparent url('../../images/style1/logo.png') no-repeat 0 0;
+	/* You can specify there logo size and background */
+	height: 84px;
+    width: 240px;
+}
+#gkLogo.text {
+	color: #333;
+	font-size: 36px;
+	min-height: 48px;
+	padding: 0;
+	text-indent: 0;
+}
+#gkLogo.text > span {
+	display: block;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 25px;
+	padding: 5px 0;
+}
+#gkLogo.text .gkLogoSlogan {
+	color: #bbb;
+	display: block;
+	
+	font-size: 11px;
+	line-height: 11px;
+}
+
+/* Other elements */
+h2 {
+	color: #de7037;
+	font-size: 46px;
+	line-height: 52px;
+	text-shadow: 4px 4px 0 #fff;
+	  -moz-text-shadow: 4px 4px 0 #fff;
+	    -webkit-text-shadow: 4px 4px 0 #fff;
+	      -ms-text-shadow: 4px 4px 0 #fff;
+	        -o-text-shadow: 4px 4px 0 #fff;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	
+}
+
+fieldset {
+	border: none;
+	border-top: 1px solid #e1ddd5;
+	padding: 24px 0 0;
+	margin: 46px auto 0;
+	width: 660px;
+	overflow: hidden;
+}
+p#username,
+p#password {
+	margin: 0 15px 15px 0;
+	float: left;
+	width: 265px;
+}
+p#remember,
+#form-login ul {
+	clear: both;
+}
+label {
+	font: 16px;
+	line-height: 1.2;
+	display: block;
+	margin: 0 0 10px 0;
+	font-family: Arial, Verdana, sans-serif;
+}
+div.buttons {
+	margin: 28px 0 0;
+}
+input[type="checkbox"] {
+	margin: 5px 5px 0 0;
+}
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="email"] {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+	border: 1px solid #eee;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+            border-radius: 3px;
+	border-top-color: #ccc;
+	height: 38px;
+	line-height: 39px;
+	padding: 0 12px;
+	font-size: 14px;
+	color: #555;
+	max-width: 100% !important;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	background: #fffef4;
+}
+button,
+.button,
+input.button,
+span.button,
+button.button,
+input[type="submit"],
+input[type="button"] {
+	background: #53524d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #53524d 0%, #62615d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#53524d), color-stop(100%,#62615d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #53524d 0%,#62615d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #53524d 0%,#62615d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #53524d 0%,#62615d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #53524d 0%,#62615d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53524d', endColorstr='#62615d',GradientType=0 ); /* IE6-9 */
+	border: none;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	-webkit-box-shadow: inset 1px 1px 0 #585752, 1px 0 3px rgba(0, 0, 0, 0.26);
+	   -moz-box-shadow: inset 1px 1px 0 #585752, 1px 0 3px rgba(0, 0, 0, 0.26);
+	    -ms-box-shadow: inset 1px 1px 0 #585752, 1px 0 3px rgba(0, 0, 0, 0.26);
+	     -o-box-shadow: inset 1px 1px 0 #585752, 1px 0 3px rgba(0, 0, 0, 0.26);
+	        box-shadow: inset 1px 1px 0 #585752, 1px 0 3px rgba(0, 0, 0, 0.26);   
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-size: 13px;
+	font-weight: normal;
+	height: 36px;
+	line-height: 37px;
+	margin: 0 5px 2px 2px;
+	padding: 0 20px;
+	text-align: center;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.05);
+	text-transform: uppercase;
+	-webkit-transition: all .1s ease-out;
+	   -moz-transition: all .1s ease-out;
+	     -o-transition: all .1s ease-out;
+	        transition: all .1s ease-out;
+}
+button:hover,
+.button:hover,
+input.button:hover,
+span.button:hover,
+button.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+	background: #f8693b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f8693b 0%, #eb592a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8693b), color-stop(100%,#eb592a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f8693b 0%,#eb592a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f8693b 0%,#eb592a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f8693b 0%,#eb592a 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f8693b 0%,#eb592a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8693b', endColorstr='#eb592a',GradientType=0 ); /* IE6-9 */
+	-webkit-box-shadow: inset 1px 1px 0 #f7683a, 1px 0 3px rgba(0, 0, 0, 0.26);
+	   -moz-box-shadow: inset 1px 1px 0 #f7683a, 1px 0 3px rgba(0, 0, 0, 0.26);
+	    -ms-box-shadow: inset 1px 1px 0 #f7683a, 1px 0 3px rgba(0, 0, 0, 0.26);
+	     -o-box-shadow: inset 1px 1px 0 #f7683a, 1px 0 3px rgba(0, 0, 0, 0.26);
+	        box-shadow: inset 1px 1px 0 #f7683a, 1px 0 3px rgba(0, 0, 0, 0.26);  
+	color: #fff;  
+}
+#remember {
+	float: left;
+	width: auto;
+}
+label[for="remember"] {
+	float: left;
+	line-height: 21px;
+}
+/* messages */
+#system-message dt {
+	display: none;
+}
+#system-message-container {
+	margin: 0 auto 5px auto!important;
+	max-width: 640px;
+	padding: 0;
+}
+#system-message dd ul {
+	list-style: none !important;
+	margin: 0!important;
+}
+#system-message dd {
+	padding: 5px 12px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	font-weight: 300;
+	margin: 0 0 10px 0;
+	background: #363636;
+}
+#system-message dd.error {
+	color: #fff;
+	background: #eb592a;
+}
+#system-message dd.notice {
+	color: #363636;
+	background: #eee;
+}
+
+@media (max-width:720px) {
+	h2 {
+		font-size: 20px;
+	}
+	fieldset {
+		width: 270px;
+	}
+}

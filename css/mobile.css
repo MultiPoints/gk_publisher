@@ -1,0 +1,523 @@
+/*
+#------------------------------------------------------------------------
+# Publisher - November Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+
+#gkContent > section {
+	margin: 0 16px;
+}
+#gkSidebar .box {
+	width: 100%;
+}
+#gkSidebar > div > .box {
+	float: none;
+	margin-top: 0!important;
+	margin-bottom: 12px!important;
+	width: 100%;
+}
+#gkSidebar .box {
+	clear: both!important;
+}
+#gkSidebar .box:nth-child(odd) {
+	margin-right: 0!important;	
+}
+#gkSidebar .box:nth-child(even) {
+	margin-left: 0!important;
+}
+#gkTop1 > div,
+#gkTop2 > div, 
+#gkBottom1 > div {
+	padding: 10px 6px 20px 6px;
+}
+
+#gkTop1 .box,
+#gkTop2 .box,
+#gkBottom1 .box,
+#gkBottom2 .box {
+	margin-top: 20px!important;
+}
+
+#gkTop1 .box:first-child,
+#gkTop2 .box:first-child,
+#gkBottom1 .box:first-child,
+#gkBottom2 .box:first-child {
+	margin-top: 0!important;
+}
+
+/* limitation suffixes */
+.box.notablet {
+	display: block!important;
+}
+.box.nomobile {
+	display: none!important;
+}
+.box.onlytablet {
+	display: none!important;
+}
+.box.onlymobile {
+	display: block!important;
+}
+
+/* Fix for the user profile */
+.profile dt {
+	width: 100% !important;
+}
+
+/* Fix for the contact page */
+.contact .contact-image {
+	float: left !important;
+}
+.contact .contact-address {
+	clear: both !important;
+	padding-top: 20px !important;
+}
+.contact .contact-form input,
+.contact .contact-form textarea {
+	width: 100% !important;
+}
+
+/* Fix for the search */
+fieldset.word #search-searchword,
+fieldset.word .inputbox {
+	width: 50%;
+}
+fieldset.phrases .ordering-box,
+fieldset.only input[type="checkbox"],
+fieldset.phrases input[type="radio"] {
+	clear: both;
+}
+
+/* Fix for the register */
+#member-registration dd {
+	clear: both !important;
+	display: block !important;
+}
+
+/* Fix for tables */
+fieldset {
+	box-sizing: border-box!important;
+	max-width: 100%!important;
+	width: 100%!important;
+	overflow: hidden;
+}
+#gkMainbody table:before {
+	content: "Scroll horizontally to view the whole table";
+	height: 14px;
+	width: 100%;
+	display: block;
+	font-size: 10px;
+	margin-top: -30px;
+	margin-bottom: 10px;
+	font-family: Arial, sans-serif;
+}
+#gkMainbody table {
+	width: 540px!important;
+	display: block!important;
+	padding: 30px 0 20px 0; /* padding for the scrollbars and the top message */
+	overflow:scroll;
+	-webkit-overflow-scrolling:touch;
+}
+#gkMainbody table tbody,
+#gkMainbody table thead,
+#gkMainbody table tfoot {
+	width: 540px!important;
+	display: table;
+}
+
+@media only screen and (max-width: 320px), only screen and (max-device-width: 320px) and (-moz-max-device-pixel-ratio: 1.5), only screen and (max-device-width: 320px) and (-o-max-device-pixel-ratio: 1.5/1), only screen  and (max-device-width: 320px) and (-webkit-max-device-pixel-ratio: 1.5), only screen and (max-device-width: 320px) and (max-device-pixel-ratio: 1.5), only screen and (max-device-width: 640px) and (-moz-min-device-pixel-ratio: 2), only screen and (max-device-width: 640px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-device-width: 640px) and (min-device-pixel-ratio: 2) {
+	#gkMainbody table {
+		width: 260px!important;
+	}
+}
+
+@media only screen and (max-width: 480px) and (orientation:landscape), only screen and (max-device-width: 480px) and (-moz-max-device-pixel-ratio: 1.5) and (orientation:landscape), only screen and (max-device-width: 480px) and (-o-max-device-pixel-ratio: 1.5/1) and (orientation:landscape), only screen  and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 1.5) and (orientation:landscape), only screen and (max-device-width: 480px) and (max-device-pixel-ratio: 1.5) and (orientation:landscape), only screen and (max-device-width: 960px) and (-moz-min-device-pixel-ratio: 2) and (orientation:landscape), only screen and (max-device-width: 960px) and (-o-min-device-pixel-ratio: 2/1) and (orientation:landscape), only screen and (max-device-width: 960px) and (-webkit-min-device-pixel-ratio: 2) and (orientation:landscape), only screen and (max-device-width: 960px) and (min-device-pixel-ratio: 2) and (orientation:landscape) {
+	#gkMainbody table {
+		width: 420px!important;
+	}
+}
+
+/* top/bottom modules */
+.box.gkmod-1,
+.box.gkmod-2,
+.box.gkmod-3,
+.box.gkmod-4,
+.box.gkmod-more {
+	float: left!important;	
+}
+.box.gkmod-1,
+.box.gkmod-2,
+.box.gkmod-3,
+.box.gkmod-4,
+.box.gkmod-more {
+	width: 100%!important;
+}
+.box.gkmod-more.gkmod-last-1:last-child,
+.box.gkmod-more.gkmod-last-2:last-child,
+.box.gkmod-more.gkmod-last-2:nth-last-child(2),
+#gkPageWrap .box.gkmod-more.gkmod-last-3:last-child,
+#gkPageWrap .box.gkmod-more.gkmod-last-3:nth-last-child(2),
+#gkPageWrap .box.gkmod-more.gkmod-last-3:nth-last-child(3) {
+	width: 100%!important;
+}
+
+/* top/bottom modules */
+body #gkPage .box {
+	margin-bottom: 20px!important;
+}
+
+/* 3-column layout */
+.gkCols3 .box.gkmod-more:nth-child(1n) {
+	clear: both;
+}
+.gkCols3 .box.gkmod-1,
+.gkCols3 .box.gkmod-2,
+.gkCols3 .box.gkmod-3,
+.gkCols3 .box.gkmod-more,
+.gkCols3 .box.gkmod-more.gkmod-last-1:last-child,
+.gkCols3 .box.gkmod-more.gkmod-last-2:last-child,
+.gkCols3 .box.gkmod-more.gkmod-last-2:nth-last-child(2) {
+	width: 100%!important;
+}
+
+/* 4-column layout */
+body .gkCols4 .box.gkmod-more:nth-child(1n) {
+	clear: both;
+}
+body .gkCols4 .box.gkmod-1,
+body .gkCols4 .box.gkmod-2,
+body .gkCols4 .box.gkmod-3,
+body .gkCols4 .box.gkmod-4,
+body .gkCols4 .box.gkmod-more,
+body .gkCols4 .box.gkmod-more.gkmod-last-1:last-child,
+body .gkCols4 .box.gkmod-more.gkmod-last-2:last-child,
+body .gkCols4 .box.gkmod-more.gkmod-last-2:nth-last-child(2),
+body .gkCols4 .box.gkmod-more.gkmod-last-3:last-child,
+body .gkCols4 .box.gkmod-more.gkmod-last-3:nth-last-child(2),
+body .gkCols4 .box.gkmod-more.gkmod-last-3:nth-last-child(3) {
+	width: 100%!important;
+}
+
+/* 6-column layout */
+body .gkCols6 .box.gkmod-more:nth-child(1n) { 
+	clear: both; 
+}
+body .gkCols6 .box.gkmod-1,
+body .gkCols6 .box.gkmod-2,
+body .gkCols6 .box.gkmod-3,
+body .gkCols6 .box.gkmod-4,
+body .gkCols6 .box.gkmod-more,
+body .gkCols6 .box.gkmod-5,
+body .gkCols6 .box.gkmod-more,
+body .gkCols6 .box.gkmod-6,
+body .gkCols6 .box.gkmod-more,
+body .gkCols6 .box.gkmod-more.gkmod-last-1:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-2:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-2:nth-last-child(2),
+body .gkCols6 .box.gkmod-more.gkmod-last-3:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-3:nth-last-child(2),
+body .gkCols6 .box.gkmod-more.gkmod-last-3:nth-last-child(3),
+body .gkCols6 .box.gkmod-more.gkmod-last-4:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-4:nth-last-child(2),
+body .gkCols6 .box.gkmod-more.gkmod-last-4:nth-last-child(3),
+body .gkCols6 .box.gkmod-more.gkmod-last-4:nth-last-child(4),
+body .gkCols6 .box.gkmod-more.gkmod-last-5:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(2),
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(3),
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(4),
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(5) {
+	width: 100%!important;
+}
+
+/* NSP adjustments */
+.nspArtPage .nspArt {
+	padding-bottom: 20px!important;
+	padding-top: 20px!important;
+	width: 100%!important;
+}
+.nspArtPage .nspArt:first-child {
+	border-top: none!important;
+}
+
+@media (max-width: 400px) {
+	.nspTopInterface {
+		display: none;
+	}
+}
+
+/* suffix mobilelayout */
+.mobilelayout .gkArtContentWrap {
+	clear: both;
+	padding-top: 10px;
+}
+
+/* other elements */
+article header {
+	margin-bottom: 15px;
+}
+
+article header h1, 
+.category header {
+	line-height: 28px;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+h2, 
+.componentheading,
+.category header h2,
+article header h2 {
+	font-size: 28px;
+}
+
+article header h2 {
+	line-height: 32px;
+}
+
+#gkSocialAPI {
+	overflow: hidden;
+}
+
+#gkSocial {
+	margin-left: 12px;
+}
+
+#gkUserArea {
+	margin-right: 12px;
+}
+
+.itemLinks .itemTagsBlock span {
+	margin-right: 20px;
+}
+
+.itemAuthorBlock .itemAuthorDetails {
+	font-size: 12px;
+	padding: 10px 0 10px 16px;
+}
+
+.itemAuthorBlock > .gkAvatar {
+	height: auto;
+	margin: 10px;
+	width: 64px;
+}
+
+.itemComments .itemCommentsList li {
+	padding-left: 0!important;
+}
+
+.itemComments .itemCommentsList li img {
+	float: left;
+	margin-left: 0;
+	margin-right: 10px;
+	position: static;
+}
+
+.itemCommentsList li h3 {
+	float: none;
+	margin: 5px 0 30px 0;
+}
+
+#article-index {
+	width: 100%;
+}
+
+/* Footer */
+
+.gkCopyrights {
+	line-height: 1.6!important;
+	margin-top: 20px;
+}
+
+#gkFrameworkLogo {
+	margin-top: 15px;
+}
+
+/* Image Show GK4 */
+.gkIsWrapper-gk_publisher figcaption {
+	display: none;
+}
+
+
+#gkContentWrap::before,
+#gkContentWrap::after {
+	display: none;
+}
+
+/* login popup */
+#gkPopupLogin {
+	position: absolute;
+	top: 70px;
+	width: 300px;
+	margin-left: -150px;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+		    border-radius: 5px;
+}
+#gkPopupLogin #loginForm  { 
+    background: transparent; 
+    padding-left: 0px;
+}
+#gkPopupLogin label { 
+	display: block;
+	clear: both;
+}
+#gkPopupLogin #login-form input[type="text"],
+#gkPopupLogin #login-form input[type="password"] {
+	clear: both;
+	float: left;
+	height: 36px;
+	width: 100%;
+}
+#gkPopupLogin #login-form fieldset p { 
+    padding: 0 0 18px
+}
+#gkPopupLogin #form-login-remember, 
+#gkPopupLogin #form-login-buttons { 
+    margin-left: 0;
+}
+#gkPopupLogin #login-form ul { 
+	margin-left: 0; 
+}
+
+#gkBottom0,
+.nonmobile,
+#gkTopBanner,
+.social {
+	display: none;
+}
+
+.mobile {
+	display: block;
+}
+
+#gkPageWrap {
+	padding: 0 5px;
+}
+
+#gkFooterNav .custom {
+	float: none;
+	text-align: center;
+}
+
+#gkBottom1 .infiniteCarousel .wrapper {
+	width: 286px !important;
+}
+
+#gkBottom2 .menu li {
+	float: none;
+	width: 100%;
+}
+
+#mainmenu ul.menu {
+}
+
+#mainmenu li.lv1_item2,
+#mainmenu li.lv1_item3,
+#mainmenu li.lv1_item4 {
+	width: 100%;
+}
+
+#mainmenu li:nth-child(3) {
+	margin: 9px 0 !important;
+}
+
+#logo {
+	width: 100%;
+	margin: 10px auto 75px;
+}
+
+#gkPageLogo .gkPage {
+	position: relative;
+}
+
+#before-logo,
+#after-logo {
+	float: none;
+	width: auto;
+	max-width: 50%;
+	position: absolute;
+	bottom: 15px;
+	margin: 0;
+	padding: 0;
+}
+
+#before-logo {
+	left: 0;
+}
+
+#after-logo {
+	right: 0;
+}
+
+#community-wrap .cIndexList > li.even,
+#community-wrap .cIndexList > li {
+	width: 100%;
+	float: none;
+	margin-bottom: 10px;
+}
+
+.full-img {
+	width: 100%;
+	float: none;
+	margin: 0;
+}
+
+.info {
+	padding-bottom: 19px;
+	width: 100%;
+	float: none;
+}
+
+#community-wrap .info h1,
+.info h1 {
+	min-height: 31px;
+}
+
+#community-wrap .eventItem .event-img {
+	width: 48% !important;
+}
+
+#community-wrap .cIndex-Content {
+	margin-left: 50%;
+	padding: 0;
+}
+
+#gkPageLogo {
+	margin: 0;
+	padding: 0;
+}
+
+ul.radius_search,
+.range.hasborder {
+	border: none;
+}
+
+.nearby_search .location {
+	width: 150px;
+}
+
+#community-wrap .event-share .modal {
+	position: static;
+}
+
+.hasborderleft {
+	border: none;
+}
+
+#gkUserArea {
+	margin: 0;
+}
+
+a#gkLogin {
+	padding-left: 0;
+}
+
+a#gkRegister {
+	padding-right: 0;
+}

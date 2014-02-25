@@ -1,0 +1,276 @@
+/*
+#------------------------------------------------------------------------
+# Publisher - November Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+
+/* Containers */
+#gkTopBanner {
+	display: none;
+}
+#gkPageWrap {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 0 10px;
+}
+#gkContentWrap2, 
+#gkSidebar {
+	width: 100% !important;
+}
+#gkSidebar {
+	padding: 30px 0 0 0!important;
+}
+#gkSidebar .box {
+	float: left;
+	margin-top: 0!important;
+	margin-bottom: 30px!important;
+	width: 48%;
+}
+#gkSidebar.gkOnlyOne .box {
+	margin: 0!important;
+	width: 100%!important;
+}
+#gkSidebar .box:nth-child(2n+1) {
+	clear: both!important;
+}
+#gkSidebar .box:nth-child(odd) {
+	margin-right: 2%!important;
+}
+#gkSidebar .box:nth-child(even) {
+	margin-left: 2%!important;
+}
+#gkPageTopBar {
+	margin: 0 -15px;
+}
+#gkPageTopBar #gkSocial {
+	margin-left: 15px!important;
+}
+#gkPageTopBar #gkUserArea {
+	margin-right: 15px!important;
+}
+#gkPageLogo {
+	margin: 0 -15px;
+	padding: 0 15px;
+}
+
+/* Footer adjustments */
+#gkFooter {
+	text-align: center;
+}
+/*#gkFooter > div > * {
+	clear: both;
+	display: inline-block!important;
+	float: none!important;
+}*/
+#gkFooter #gkStyleArea {
+	display: block!important;
+}
+
+/* Limitation suffixes */
+.box.notablet {
+	display: none!important;
+}
+.box.nomobile {
+	display: block!important;
+}
+.box.onlytablet {
+	display: block!important;
+}
+.box.onlymobile {
+	display: none!important;
+}
+
+/* Fix for the contact page */
+.contact .contact-image {
+	float: left !important;
+}
+.contact .contact-address {
+	clear: both !important;
+	padding-top: 20px !important;
+}
+.contact .contact-form input[type="text"],
+.contact .contact-form input[type="email"],
+.contact .contact-form textarea {
+	width: 100% !important;
+}
+
+/* K2 edit popup */
+#sbox-window,
+#sbox-window iframe {
+	width: 720px!important;
+	max-width: 720px!important;
+	left: 10px!important;
+}
+
+/* menu */
+#gkMobileMenu {
+	background: transparent url('../images/tablet_menu_btn.png') no-repeat 16px center;
+	float: right;
+	margin-top: 10px;
+	position: relative;
+}
+#gkTopBanner {
+	clear: both;
+	float: none!important;
+	margin: 20px auto 0 auto!important;
+}
+#gkExtraMenu {
+	display: none!important;
+}
+#gkMainMenu {
+	border: none!important;
+	clear: none!important;
+	float: left;
+	text-indent: 15px;
+	width: 64px!important;
+}
+#gkMobileMenu select {
+	width: 64px;
+	height: 45px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#gkMobileMenu {
+	display: block!important;
+	font-size: 18px;
+	height: 52px;
+	line-height: 44px;
+	position: relative;
+	width: 50px;
+	text-indent: -9999px;
+}
+
+/* 4-column layout */
+body .gkCols4 .box.gkmod-1 {
+	width: 100%;	
+}
+body .gkCols4 .box.gkmod-2 {
+	width: 50%;
+}
+body .gkCols4 .box.gkmod-3 {
+	width: 50%;
+}
+body .gkCols4 .box.gkmod-4,
+body .gkCols4 .box.gkmod-more {
+	width: 50%;
+}
+body .gkCols4 .box.gkmod-more:nth-child(2n+1) {
+	clear: both;
+}
+body .gkCols4 .box.gkmod-more.gkmod-last-1:last-child {
+	width: 100%!important;
+}
+body .gkCols4 .box.gkmod-more.gkmod-last-2:last-child,
+body .gkCols4 .box.gkmod-more.gkmod-last-2:nth-last-child(2) {
+	width: 50%!important;
+}
+body .gkCols4 .box.gkmod-more.gkmod-last-3:last-child,
+body .gkCols4 .box.gkmod-more.gkmod-last-3:nth-last-child(2),
+body .gkCols4 .box.gkmod-more.gkmod-last-3:nth-last-child(3) {
+	width: 50%!important;
+}
+
+/* 6-column layout */
+body .gkCols6 .box.gkmod-1 {
+	width: 100%;	
+}
+body .gkCols6 .box.gkmod-2 {
+	width: 50%;
+}
+body .gkCols6 .box.gkmod-3 {
+	width: 33.3%;
+}
+body .gkCols6 .box.gkmod-4,
+body .gkCols6 .box.gkmod-more {
+	width: 33.3%;
+}
+body .gkCols6 .box.gkmod-5,
+body .gkCols6 .box.gkmod-more {
+	width: 33.3%;
+}
+body .gkCols6 .box.gkmod-6,
+body .gkCols6 .box.gkmod-more {
+	width: 33.3%;
+}
+body .gkCols6 .box.gkmod-more:nth-child(3n+1) {
+	clear: both;
+}
+body .gkCols6 .box.gkmod-more.gkmod-last-1:last-child {
+	width: 100%!important;
+}
+body .gkCols6 .box.gkmod-more.gkmod-last-2:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-2:nth-last-child(2) {
+	width: 50%!important;
+}
+body .gkCols6 .box.gkmod-more.gkmod-last-3:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-3:nth-last-child(2),
+body .gkCols6 .box.gkmod-more.gkmod-last-3:nth-last-child(3) {
+	width: 33.3%!important;
+}
+body .gkCols6 .box.gkmod-more.gkmod-last-4:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-4:nth-last-child(2),
+body .gkCols6 .box.gkmod-more.gkmod-last-4:nth-last-child(3),
+body .gkCols6 .box.gkmod-more.gkmod-last-4:nth-last-child(4) {
+	width: 33.3%!important;
+}
+body .gkCols6 .box.gkmod-more.gkmod-last-5:last-child,
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(2),
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(3),
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(4),
+body .gkCols6 .box.gkmod-more.gkmod-last-5:nth-last-child(5) {
+	width: 33.3%!important;
+}
+
+/* Page elements */
+h1 {
+	font-size: 36px;
+}
+
+#gkMainbody .registration {
+	max-width: 100%;
+}
+
+.gkPage#gkBottom1 {
+	max-width: 100%;
+}
+
+#gkBottom1 .infiniteCarousel {
+	text-align: center;
+}
+
+#gkBottom1 .infiniteCarousel .wrapper {
+	margin: 0 auto;
+	right: auto;
+	width: 592px !important;
+	position: static;
+	overflow: hidden;
+}
+
+#gkBottom1 .infiniteCarousel .wrapper ul {
+	position: static;
+}
+
+#gkBottom2 .gkPage .box {
+	padding-left: 20px;
+}
+
+#gkFooterNav {
+	padding: 0 20px;
+}
+
+#community-wrap .cIndexList > li.even,
+#community-wrap .cIndexList > li {
+	width: 100%;
+	float: none;
+}

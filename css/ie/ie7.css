@@ -1,0 +1,55 @@
+/*
+#------------------------------------------------------------------------
+# Publisher - November Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+#ieToolbar {   
+	background: #ffffdb;
+	text-align: center
+}
+#ieToolbar div { 
+	background: url('../../images/style1/typography/warning_small.png') no-repeat 0 50%;
+	margin: 0 auto;
+	padding: 12px 0;  
+	width: 980px
+}
+#ieToolbar a {
+	text-decoration: underline
+}
+table,
+table tr,
+table td,
+table tbody,
+table thead {
+     vertical-align: top!important;
+}
+
+#summary,
+#description {
+	width: 90% !important;
+}
+
+.input-append {
+	float: left;
+}
+
+#startdate,
+#enddate {
+	width: auto !important;
+}
+
+#event-start-datetime .form-field,
+#event-end-datetime .form-field {
+	margin-left: 0 !important;
+}
+
+.icon-calendar {
+	background: url(../../images/custom/cal-icon.png) no-repeat center;
+	width: 13px;
+	height: 14px;
+}
